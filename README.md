@@ -1,2 +1,14 @@
-# nfv_sdn_orchestration
-This project is a lightweight NFV Orchestrator that aims to achieve service chaining, AI-based traffic classification and real-time statistics monitoring in a SDN-based virtual environment.
+# NFV Orchestration using SDN
+
+## Overview
+This project demonstrates how VNFs like Firewall, DPI, and NAT can be orchestrated dynamically using SDN (OpenDaylight) and deployed in a virtual network (Mininet).
+
+## How to Run
+
+```bash
+./run_demo.sh
+```
+
+## API
+
+- `POST /deploy` – Deploys firewall VNF and sets ODL flow

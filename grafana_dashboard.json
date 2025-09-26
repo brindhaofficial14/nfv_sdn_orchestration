@@ -1,0 +1,38 @@
+{
+  "title": "VNF Metrics Dashboard",
+  "panels": [
+    {
+      "type": "graph",
+      "title": "Firewall Packets Processed",
+      "targets": [
+        {
+          "expr": "firewall_packets_total"
+        }
+      ],
+      "datasource": "Prometheus"
+    },
+    {
+      "type": "graph",
+      "title": "DPI Packets & HTTP Requests",
+      "targets": [
+        {
+          "expr": "dpi_packets_total"
+        },
+        {
+          "expr": "dpi_http_requests_total"
+        }
+      ],
+      "datasource": "Prometheus"
+    },
+    {
+      "type": "graph",
+      "title": "NAT Packets Processed",
+      "targets": [
+        {
+          "expr": "nat_packets_total"
+        }
+      ],
+      "datasource": "Prometheus"
+    }
+  ]
+}
